@@ -1,1 +1,55 @@
-@import '~bootstrap/scss/bootstrap'
+@import '~bootstrap/scss/bootstrap';
+
+.col {
+    padding-bottom: 1rem;
+
+    .card {
+        height: 280px;
+
+        &:hover {
+            cursor: pointer;
+            border: 2px solid lightgrey;
+        }
+    }
+
+}
+
+main {
+    background-color: #212529;
+}
+
+.support {
+    h1 {
+        color: white;
+    }
+
+    p {
+        padding: 1rem 0;
+        color: lightgrey;
+    }
+
+    div {
+        label {
+            color: white;
+        }
+
+        .pt_20 {
+            padding-top: 20px;
+        }
+    }
+}
+
+footer {
+    ul {
+        li {
+            a {
+                text-decoration: none;
+                color: white;
+
+                &:hover {
+                    color: skyblue;
+                }
+            }
+        }
+    }
+}

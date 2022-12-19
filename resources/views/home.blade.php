@@ -2,17 +2,17 @@
 
 @section('content')
 
-<h1>Welcome</h1>
 <div class="container">
-    <div class="row row-cols-md-3">
+    <h1 class="text-center text-light py-5">Welcome To Our Movies List</h1>
+    <div class="row row-cols-5">
         @forelse($movies as $movie)
         <div class="col">
             <div class="card">
-                <h2>{{$movie->title}}</h2>
-                <h3>{{$movie->original_title}}</h3>
-                <h4>{{$movie->nationality}}</h4>
-                <h4>{{$movie->date}}</h4>
-                <span>{{$movie->vote}}</span>
+                <h3>{{$movie->title}}</h3>
+                <h4>{{$movie->original_title}}</h4>
+                <h5>Language: {{$movie->nationality}}</h5>
+                <h5>Release: {{$movie->date}}</h5>
+                <span>Rating: {{$movie->vote}}</span>
             </div>
         </div>
         @empty
