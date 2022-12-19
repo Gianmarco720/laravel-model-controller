@@ -1,5 +1,9 @@
 @import '~bootstrap/scss/bootstrap';
 
+header {
+    border-bottom: 1px solid grey;
+}
+
 .col {
     padding-bottom: 1rem;
 
@@ -40,6 +44,8 @@ main {
 }
 
 footer {
+    border-top: 1px solid grey;
+
     ul {
         li {
             a {
